@@ -4,7 +4,7 @@ import PageHeader from '../../components/page-header/page-header';
 import PageFooter from '../../components/page-footer/page-footer';
 import MovieTabs from '../../components/movie-tabs/movie-tabs';
 import { useEffect, useState } from 'react';
-import { AuthorizationStatus, MoviePageTabs } from '../../utils/constants';
+import { AuthorizationStatus, MOVIE_PAGE_TABS } from '../../utils/constants';
 import MovieInformation from '../../components/movie-information/movie-information';
 import SimilarFilmList from '../../components/similar-film-list/similar-film-list';
 import { useAppDispatch, useAppSelector } from '../../hooks';
@@ -17,7 +17,7 @@ import {
 import { setDataLoadedStatus } from '../../store/action';
 
 function MoviePage(): JSX.Element {
-  const [currentTab, setCurrentTab] = useState(MoviePageTabs[0]);
+  const [currentTab, setCurrentTab] = useState(MOVIE_PAGE_TABS[0]);
   const id = Number(useParams().id);
   const film = useAppSelector((state) => state.film);
   const similarFilms = useAppSelector((state) => state.similar);

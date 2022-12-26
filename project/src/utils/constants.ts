@@ -1,4 +1,4 @@
-export const MoviePageTabs = ['Overview', 'Details', 'Reviews'];
+export const MOVIE_PAGE_TABS = ['Overview', 'Details', 'Reviews'];
 
 export enum AppRoute {
   Home = '/',
@@ -9,7 +9,7 @@ export enum AppRoute {
   Player = '/player'
 }
 
-export const MonthNames = [
+export const MONTH_NAMES = [
   'January',
   'February',
   'March',

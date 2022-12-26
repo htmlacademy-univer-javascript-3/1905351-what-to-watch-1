@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { MouseEvent } from 'react';
-import PreviewPlayer from '../video-preview/preview-player';
+import VideoPreview from '../video-preview/video-preview';
 import { useAppDispatch } from '../../hooks';
 import { resetHomeScreen } from '../../store/action';
 
@@ -32,7 +32,7 @@ function MovieCard({
     >
       <div className='small-film-card__image'>
         {isMouseOver ? (
-          <PreviewPlayer poster={poster} videoPreview={videoPreview} />
+          <VideoPreview poster={poster} videoPreview={videoPreview} />
         ) : (
           <img src={poster} alt={title} width='280' height='175' />
         )}

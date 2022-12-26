@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 
 type VideoPreviewProps = { videoPreview: string; poster: string };
 
-function PreviewPlayer({
+function VideoPreview({
   videoPreview,
   poster
 }: VideoPreviewProps): JSX.Element {
@@ -22,4 +22,4 @@ function PreviewPlayer({
   );
 }
 
-export default PreviewPlayer;
+export default VideoPreview;

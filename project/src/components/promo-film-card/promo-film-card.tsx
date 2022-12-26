@@ -12,7 +12,7 @@ function PromoFilmCard(): JSX.Element {
   }, [dispatch]);
 
   if (!promoFilm) {
-    return <></>;
+    return <div></div>;
   }
 
   return (

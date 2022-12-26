@@ -1,4 +1,4 @@
-import { MoviePageTabs } from '../../utils/constants';
+import { MOVIE_PAGE_TABS } from '../../utils/constants';
 import { changeFilmTab } from '../../store/action';
 import { useAppDispatch } from '../../hooks';
 
@@ -12,7 +12,7 @@ function MovieTabs({ currentTab, updateTab }: MovieTabsProps): JSX.Element {
   return (
     <nav className='film-nav film-card__nav'>
       <ul className='film-nav__list'>
-        {MoviePageTabs.map((tab) => (
+        {MOVIE_PAGE_TABS.map((tab) => (
           <li
             key={tab}
             className={`film-nav__item ${
